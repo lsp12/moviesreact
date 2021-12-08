@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from '../modules/home/pages/Home';
+import Movie from '../modules/home/pages/Movie';
 import MainLayout from '../modules/shared/MainLayout/MainLayout';
 
 const AppRouter = () => {
@@ -8,7 +8,7 @@ const AppRouter = () => {
     <MainLayout>
         <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />}>
+      <Route path="/" element={<Movie />}>
       </Route>
     </Routes>
   </BrowserRouter>

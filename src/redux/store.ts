@@ -1,7 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
+// Slices
+import movieSlices from '../modules/home/slice/movieSlice'
+
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    movie: movieSlices
+  },
   middleware: ( getDefaultMiddleware ) => getDefaultMiddleware({
     serializableCheck: false,
   }),
